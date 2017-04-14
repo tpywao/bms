@@ -18,8 +18,10 @@ from django.conf.urls import include
 from django.contrib import admin
 
 from bookmark import urls as bookmark_urls
+from tag import urls as tag_urls
 
 urlpatterns = [
     url(r'^', include(bookmark_urls)),
+    url(r'^tag/', include(tag_urls)),
     url(r'^admin/', admin.site.urls),
 ]

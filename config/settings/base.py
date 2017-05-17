@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 
 import environ
 
+env = environ.Env(DJANGO_ENV=(str, 'development'))
+DJANGO_ENV = env('DJANGO_ENV')
+
 # Build paths inside the project like this: BASE_DIR(...)
 BASE_DIR = environ.Path(__file__) - 3
 APPS_DIR = BASE_DIR.path('bms')
@@ -61,7 +64,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [APPS_DIR('templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,3 +128,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR('staticfiles')
+STATICFILES_DIRS = (
+    APPS_DIR('static'),
+)

@@ -23,9 +23,6 @@ APPS_DIR = BASE_DIR.path('bms')
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'y@=g2_qx-&n8^vyokekpfwcybd)0o(m^vo83fcbsk65igmxc27'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
 ALLOWED_HOSTS = []
 
 

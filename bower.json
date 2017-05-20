@@ -1,3 +1,6 @@
 {
-  "name": "bms"
+  "name": "bms",
+  "dependencies": {
+    "Umi": "^3.3.7-2"
+  }
 }

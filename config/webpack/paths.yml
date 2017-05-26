@@ -1,0 +1,19 @@
+default: &default
+  config: config/webpack
+  source: bms/static/coffee
+  entry: ''
+  node_modules: node_modules
+  bower_components: bower_components
+  output: bms/static
+  extensions:
+    - .js
+    - .coffee
+    - .css
+    - .eot
+    - .svg
+    - .ttf
+    - .woff
+    - .woff2
+
+development:
+  <<: *default

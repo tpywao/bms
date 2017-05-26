@@ -3,6 +3,21 @@
   "version": "0.0.0",
   "dependencies": {
     "bower": "^1.8.0",
-    "webpack": "^2.5.1"
+    "coffee-loader": "^0.7.3",
+    "coffee-script": "^1.12.6",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "glob": "^7.1.2",
+    "jquery": "^3.2.1",
+    "js-yaml": "^3.8.4",
+    "path-complete-extname": "^0.1.0",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.5.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "devDependencies": {
+    "expose-loader": "^0.7.3"
   }
 }

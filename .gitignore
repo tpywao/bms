@@ -10,9 +10,19 @@ db.sqlite3
 media
 
 # End of https://www.gitignore.io/api/django
+### Django additional settings ###
+staticfiles/
 
 ### yarn ###
 node_modules
 
 ### bower ###
 bower_components
+
+### webpack ###
+# output files
+bundle.js
+bundle.js.map
+bundle.css
+bundle.css.map
+

@@ -45,6 +45,7 @@ THIRD_PARTY_APPS = (
 
 LOCAL_APPS = (
     'libs',
+    'bms.bookmarks',
 )
 
 INSTALLED_APPS = list(DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS)

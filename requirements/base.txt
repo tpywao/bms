@@ -1,3 +1,5 @@
 Django==1.11.1
 django-environ==0.4.3
 django-hamlpy==1.1
+django-taggit==0.22.1
+beautifulsoup4==4.6.0
